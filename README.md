@@ -109,7 +109,6 @@ round(results, 3)
 
 ## Predicted vs Actual 
 ```{r}
-# ── PREDICTED VS ACTUAL (best model) ─────────────────────────
 plot(y_test, predict(rf, test), pch = 16, col = "steelblue",
      xlab = "Actual", ylab = "Predicted", main = "RF: Predicted vs Actual")
 abline(0, 1, col = "red", lwd = 2)
