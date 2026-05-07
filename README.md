@@ -100,9 +100,8 @@ rf_calc <- calc(y_test, predict(rf, test))
 rf_calc
 ```
 
-#Comparison 
+## Comparison 
 ```{r}
-# ── COMPARISON TABLE ──────────────────────────────────────────
 results <- rbind(MLR = mod_calc, Ridge = ridge_calc, Lasso = lasso_calc, RF = rf_calc)
 round(results, 3)
 
